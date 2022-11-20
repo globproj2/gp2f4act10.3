@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |v|
     v.name = "gp2f4act10"
     v.memory = 2048
-    v.cpus = 1
+    v.cpus = 2
     v.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
     # config.vm.synced_folder ".","/home/vagrant/gp2f4act10"     
   end
